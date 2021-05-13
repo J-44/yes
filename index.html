@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <title>Image recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://teachablemachine.withgoogle.com/models/lzCFTOTFd/"></script>
+  <link rel="stylesheet" href="main.js">
+</head>
+
+<body>
+  <center>
+    <h1>Felling Expresser</h1>
+    <h2>Hand Gestures</h2>
+    <div>
+      <h3>Bye</h3>
+    </div>
+    <div>&#9995;</div>
+    <div>
+      <h3>Amazing</h3>
+    </div>
+    <div>&#128076;</div>
+    <div>
+      <h3>Thumbs Up</h3>
+    </div>
+    <div>&#128077;</div>
+    <div>
+      <h3>Yo</h3>
+    </div>
+    <div>&#129304;</div>
+    <div>
+      <h3>Victory</h3>
+    </div>
+    <div>&#9996;</div>
+    <br>
+    <br>
+    <label>Predetion</label><div id="predect"></div>
+    <div id="liv"></div>
+    <div id="shot"></div>
+    <span><button onclick="take()" class="btn btn-success">Take Image</button></span>
+    <span><label id="thing"></label></span>
+    <br>
+    <br>
+    <span><button onclick="identify()" class="btn btn-success">Identify Image</button></span>
+    <span><label id="object"></label></span>
+  </center>
+</body>
+
+</html>
